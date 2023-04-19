@@ -48,16 +48,16 @@ The images where transformed in the following manner
 
 | **Transformation**               |   **OutPut**                                     |
 | -------------------------------- |  ----------------------------------------------- |
-| Original Image                   | ![Transformation](/README-images/original.png)   |
-| horizontal flipping              | ![Transformation](/README-images/horizontal.png) |
-| vertical flipping                | ![Transformation](/README-images/vertical.png)   |
-| zooming at 0.2                   | ![Transformation](/README-images/zoom.png)       |
-| rotation at 20 degrees           | ![Transformation](/README-images/rotation.png)   |
-| featurewise_std_normalization    | ![Transformation](/README-images/featurewise.png)|
-| shear-range of 0.2               | ![Transformation](/README-images/shear.png)      |
-| brightening at the range 0.2-1.5 | ![Transformation](/README-images/brightness.png) |
-| width shift range of 0.1         | ![Transformation](/README-images/width.png)      |
-| height shift range of 0.1        | ![Transformation](/README-images/height.png)     |
+| Original Image                   | ![Transformation](/images/original.png)          |
+| horizontal flipping              | ![Transformation](/images/horizontal.png)        |
+| vertical flipping                | ![Transformation](/images/vertical.png)          |
+| zooming at 0.2                   | ![Transformation](/images/zoom.png)              |
+| rotation at 20 degrees           | ![Transformation](/images/rotation.png)          |
+| featurewise_std_normalization    | ![Transformation](/images/featurewise.png)       |
+| shear-range of 0.2               | ![Transformation](/images/shear.png)             |
+| brightening at the range 0.2-1.5 | ![Transformation](/images/brightness.png)        |
+| width shift range of 0.1         | ![Transformation](/images/width.png)             |
+| height shift range of 0.1        | ![Transformation](/images/height.png)            |
 
 **2. Model Development and Fine-tuning**
 
@@ -152,7 +152,7 @@ Therefore, the most efficient model is the EfficientNet despite the longer train
 
 #### Library Requirements
 
-I will be using the following libraries to complete our classification problem:
+I will be using the following libraries to complete The classification problem:
 
 * **Numpy** - For linear algebra operations
 * **Torch** - Pytorch Deep Learning Framework
