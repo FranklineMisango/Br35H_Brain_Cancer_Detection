@@ -40,7 +40,7 @@ Minimum Machine Specifications
 
 _A Glimpse of the data_
 
-![DataSet](/README-images/DataSet.png)
+![DataSet](images/DataSet.png)
 
 _Pre-Processing of the data_
 
@@ -119,6 +119,8 @@ After comparing VGG16 and EfficientNetB7, The results are as below :
 | ---------------------- |  ------------------------ |
 | `EfficientNet`         |                           |
 | `VGG16 `               |                           |
+| `Google LeNet `        |                           |
+
 
 Therefore, the most efficient model is the EfficientNet despite the longer training time
 
@@ -174,11 +176,8 @@ For pip version 19.1 or above:
 
 ~~~bash
 pip install -r requirements.txt --user
-
 ~~~
 
 #### Pytorch
 
 Follow the steps for installation given in the official website of [Pytorch](https://pytorch.org).
-
-
