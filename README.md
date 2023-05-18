@@ -1,14 +1,15 @@
 # Brain Tumor Project
-
+![under_cons](images/under_cons.jpg)
 ## Brief Description
 
-This project is a combination of Manually Trained and pretrained VGG16, Google's LeNET & EfficientNetB7 models to comprehensively address the Brain Tumor segmentation procedure. I compare the Two main widely implemented models : VGG16 & EfficientNetModel7 and Curate a simple web application to allow the Medical Practitioner client to use the most efficent model or choose either for the matter
+This project is a Test of Large Pre Trained Models (PTMs) : VGG16 & EfficientNetB7 models to comprehensively address the Brain Tumor segmentation procedure. I compare the Two and Curate a simple Web application to allow a Medical Practitioner client to use the most efficent model or choose either for the matter
 
 ## Abstract
 
-A Brain tumor is considered as one of the aggressive diseases, among children and adults. Brain tumors account for 85 to 90 percent of all primary Central Nervous System(CNS) tumors. Every year, around 11,700 people are diagnosed with a brain tumor. The 5-year survival rate for people with a cancerous brain or CNS tumor is approximately 34 percent for men and36 percent for women. Brain Tumors are classified as: Benign Tumor, Malignant Tumor, Pituitary Tumor, etc. Proper treatment, planning, and accurate diagnostics should be implemented to improve the life expectancy of the patients. The best technique to detect brain tumors is Magnetic Resonance Imaging (MRI). A huge amount of image data is generated through the scans. These images are examined by the radiologist. A manual examination can be error-prone due to the level of complexities involved in brain tumors and their properties.Application of automated classification techniques using Machine Learning(ML) and Artificial Intelligence(AI)has consistently shown higher accuracy than manual classification. Hence, proposing a system performing detection and classification by using Deep Learning Algorithms using Convolution-Neural Network (CNN), Artificial Neural Network (ANN), and Transfer-Learning (TL) would be helpful to doctors all around the world.
+A brain tumor is regarded as a highly aggressive ailment affecting both children and adults. It constitutes 85 to 90 percent of all primary tumors in the central nervous system (CNS). Annually, approximately 11,700 individuals receive a brain tumor diagnosis. The 5-year survival rates for cancerous brain or CNS tumors are around 34 percent for men and 36 percent for women. Brain tumors can be categorized as benign, malignant, or pituitary tumors. To enhance the life expectancy of patients, it is crucial to implement appropriate treatment, planning, and precise diagnostics. Magnetic Resonance Imaging (MRI) is the most effective method for detecting brain tumors, generating a vast amount of image data. These images are examined by radiologists. However, manual examination is prone to errors due to the complexities associated with brain tumors and their properties. The application of automated classification techniques, such as Machine Learning (ML) and Artificial Intelligence (AI), has consistently demonstrated higher accuracy compared to manual classification. Therefore, proposing a system that utilizes Deep Learning Algorithms, specifically Convolutional Neural Networks (CNN), Artificial Neural Networks (ANN), and Transfer Learning (TL), to perform detection and classification would be beneficial for doctors worldwide.
 
 ## Context
+
 Brain Tumors are complex. There are a lot of abnormalities in the sizes and location of the brain tumor(s). This makes it really difficult for complete understanding of the nature of the tumor. Also, a professional Neurosurgeon is required for MRI analysis. Often times in developing countries the lack of skillful doctors and lack of knowledge about tumors makes it really challenging and time-consuming to generate reports from MRI’. So an automated system on Cloud can solve this problem.
 
 ## Definition
@@ -28,15 +29,15 @@ The Dataset was download from kaggle, and it is publicly available and has no us
 3. Masoud Nickparvar 
 
 Download the dataset from [Kaggle](https://www.kaggle.com/sartajbhuvaji/brain-tumor-classification-mri).
-DOwnload the Validation Dataset from [kaggle2] (https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset)
+DOwnload the Validation Dataset from [kaggle2](https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset)
 
 ## Requirements
 
 Minimum Machine Specifications
 
-| **Requirement**   |   **Description**                                        |
+| **Requirement**        |   **Description**                                   |
 | ---------------------- |  -------------------------------------------------- |
-| `Google Colab    `     |Select the GPU runtime and select the package; Free  |
+| `Google Colab`         |Select the GPU runtime - Colab Pro is recommended    |
 
 _A Glimpse of the data_
 
@@ -120,7 +121,7 @@ After comparing VGG16 and EfficientNetB7, The results are as below :
 | `EfficientNet`         |                           |
 | `VGG16 `               |                           |
 
-Therefore, the most efficient model is the EfficientNet despite the longer training time
+Therefore, the most efficient model is the despite the longer training time
 
 ## Web Application
 
@@ -173,6 +174,7 @@ Install the required libraries on your computer using the [pip](https://pip.pypa
 For pip version 19.1 or above:
 
 ~~~bash
+
 pip install -r requirements.txt --user
 
 ~~~
