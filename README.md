@@ -1,6 +1,4 @@
-# Brain Tumor Project
-
-![under_cons](images/under_cons.jpg)
+# Brain Tumor Research Project
 
 ## Brief Description
 
@@ -144,39 +142,40 @@ After comparing VGG16 and EfficientNetB7, The results are as below :
 
 Therefore, the most efficient model is `EfficientNetB7` after a Training of 5 hours
 
-## Web Application
+## Web Application & Local Installation
+
+![under_cons](images/under_cons.jpg)
 
 #### Home Page
 
-![index](results/web1.png)
+![index]()
 
 #### Classification Results via Web Interface
 
-![class 1](results/web2.png)
+![class 1]() 
+![class 2]()
+![class 3]()
+![class 4]()
 
-![class 2](results/web3.png)
+### Installation
 
-![class 3](results/web4.png)
+* Clone this Repository to your local terminal
+* Create a New Folder called Models in the Repo (Don't Attempt to Git push to my original Repository)
+* Download my Latest VGG16.h5 file [here](https://drive.google.com/file/d/1UCVRtdH8yeMdnOHV3Vov6trOpkPEwbsP/view?usp=sharing).
+* Donwload my Latest EfficientNetB7.h5d5 file [here](https://drive.google.com/file/d/1I0pbD4h9oGQIq_9ZFyqiOGXOOXHqEHDa/view?usp=sharing).
+* Copy these Two files to the Models Folder
+* Run `pip install requirements.txt`
+* After all requirements are met, run `python3 app.py` 
+* Run also `python3 deploy.py`
+* The Application should show on your browser as depicted in the Demo Images
 
-### Classifier Evaluation
-
-#### Loss Graph
-
-![Loss Metrics](results/loss_metrics.png)
-
-#### Accuracy Graph
-
-![Accuracy Metrics](results/accuracy_metrics.png)
-
-#### Confusion Matrix on Test set
-
-![Confusion Matrix](results/cm.png)
 
 #### Library Requirements
 
 I will be using the following libraries to complete The classification problem:
 
 * **Numpy** - For linear algebra operations
+* **Streamlit** - For Light weight Web Application exemplification of the Models
 * **Torch** - Pytorch Deep Learning Framework
 * **OS** - To use Operating System methods
 * **Random** - To set random seed at specific places where random operations take place just so it happens the same way everytime it is executed
