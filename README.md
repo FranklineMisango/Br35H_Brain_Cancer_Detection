@@ -51,7 +51,7 @@ _Pre-Processing of the data_
 
 The images where transformed in the following manner
 
-| **Transformation**               |   **OutPut**                                     |
+| **Transformation**               |   **Output**                                     |
 | -------------------------------- |  ----------------------------------------------- |
 | Original Image                   | ![Transformation](/images/original.png)          |
 | horizontal flipping              | ![Transformation](/images/horizontal.png)        |
@@ -70,7 +70,7 @@ The following parameters namely: Batch size, Epochs, Dropout and Optimizer, of t
 
 The following values and parameters where chosen:
 
-- **_Optimizers_** -  Five optimizers have been chosen , namely ; `1. SGD,2. RMSprop,3. Adam,4. Adagrad,5. Adadelta.` the best optimizer will be used in the New model and as step 1 for the webapp
+- **_Optimizers_** -  Five optimizers have been chosen , namely ; `1. SGD 2. RMSprop 3. Adam 4. Adagrad 5. Adadelta.` the best optimizer will be used in the New model and as step 1 for the webapp
 
 - **_Number of epochs_** - Epochs variation ; `1, 2, 5, 10.`
 
