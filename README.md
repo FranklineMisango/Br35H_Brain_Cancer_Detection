@@ -1,5 +1,7 @@
 # Brain Tumor Project
+
 ![under_cons](images/under_cons.jpg)
+
 ## Brief Description
 
 This project is a Test of Large Pre Trained Models (PTMs) : VGG16 & EfficientNetB7 models to comprehensively address the Brain Tumor segmentation procedure. I compare the Two and Curate a simple Web application to allow a Medical Practitioner client to use the most efficent model or choose either for the matter
@@ -16,9 +18,9 @@ Brain Tumors are complex. There are a lot of abnormalities in the sizes and loca
 
 To Detect and Classify Brain Tumor using, CNN and TL; as an asset of Deep Learning and to examine the tumor position(segmentation).
 
-# The Data-Set
+# The DataSet
 
-The Dataset folder contains MRI data. The images are already split into Training and Testing folders.
+The Dataset folder contains MRI data. The images are already split into Training,Testing and Validation folders.
 Each folder has more four subfolders. These folders have MRIs of respective tumor classes.
 The Dataset was download from kaggle, and it is publicly available and has no use restriction.
 
@@ -29,7 +31,7 @@ The Dataset was download from kaggle, and it is publicly available and has no us
 3. Masoud Nickparvar 
 
 Download the dataset from [Kaggle](https://www.kaggle.com/sartajbhuvaji/brain-tumor-classification-mri).
-DOwnload the Validation Dataset from [kaggle2](https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset)
+Download the Validation Dataset from [kaggle](https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset)
 
 ## Requirements
 
@@ -37,11 +39,13 @@ Minimum Machine Specifications
 
 | **Requirement**        |   **Description**                                   |
 | ---------------------- |  -------------------------------------------------- |
-| `Google Colab`         |Select the GPU runtime - Colab Pro is recommended    |
+| `Google Colab`         |Select the GPU/TPU runtime - Colab Pro is recommended|
 
 _A Glimpse of the data_
 
-![DataSet](images/DataSet.png)
+| **Image**              |![desc](/images/glioma.jpg)   |[sc](/images/meningioma.jpg) |![sc](/images/pituitary.jpg)| ![sc](/images/no_tumor.jpg) |
+| ---------------------- |------------------------------|-----------------------------|----------------------------|-----------------------------|
+| **Description**        |Glioma                        |Meningioma                   |Pituitary                   |No Tumor                     |
 
 _Pre-Processing of the data_
 
@@ -101,29 +105,44 @@ The following values and parameters where chosen:
 
 #### VGG16 - Optimizer
 
-![FineTuning](images/Screenshot_20211213-111155_Chrome.jpg)
+![FineTuning](images/vgg_opt.png)
 
 
 
-**3. Final Model Implementation and Results**
+**3. Final Model Implementation(s) and Results**
 
 This is the structure of the EfficientNetB7 model implemented with optimum parameters, similarly with the VGG16 model.
 
-![Model](/README-images/ModelEFN.png)
+#### EfficientNetB7 model
+
+| **Parameter**          |   **Optimal values**      |
+| ---------------------- |-------------------------- |
+|`Optimizer`             |`Adagrad`                  |
+|`Dropout_rate `         |`0.6`                      |
+|`Batch size `           |`16`                       |
+|`Epochs `               |`10`                       |
+
+
+#### VGG16 model
+
+| **Parameter**          |   **Optimal values**      |
+| ---------------------- |-------------------------- |
+|`Optimizer`             |`Adagrad`                  |
+|`Dropout_rate `         |`0.5`                      |
+|`Batch size `           |`16`                       |
+|`Epochs `               |`10`                       |
 
 **4. Conclusions**
 
 After comparing VGG16 and EfficientNetB7, The results are as below : 
 
 
-| **Requirement(%)**     |   **Accuracy (%)**        |
-| ---------------------- |  ------------------------ |
-| `EfficientNet`         |                           |
-| `VGG16 `               |                           |
-| `Google LeNet `        |                           |
+| **Requirement(%)**     |   **Accuracy (%)**        |  **Validation Accuracy (%)** |
+| ---------------------- |-------------------------- |------------------------------|
+| `EfficientNetB7`       |  97.76                    | 97.17                       |
+| `VGG16 `               |  96.34                    | 78/17                        |
 
-
-Therefore, the most efficient model is the despite the longer training time
+Therefore, the most efficient model is `EfficientNetB7` after a Training of 5 hours
 
 ## Web Application
 
@@ -176,10 +195,5 @@ Install the required libraries on your computer using the [pip](https://pip.pypa
 For pip version 19.1 or above:
 
 ~~~bash
-
 pip install -r requirements.txt --user
 ~~~
-
-#### Pytorch
-
-Follow the steps for installation given in the official website of [Pytorch](https://pytorch.org).
