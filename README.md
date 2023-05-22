@@ -43,7 +43,7 @@ Minimum Machine Specifications
 
 _A Glimpse of the data_
 
-| **Image**              |![desc](/images/glioma.jpg)   |[sc](/images/meningioma.jpg) |![sc](/images/pituitary.jpg)| ![sc](/images/no_tumor.jpg) |
+| **Image**              |![desc](/images/glioma.jpg)   |![sc](/images/meningioma.jpg)|![sc](/images/pituitary.jpg)| ![sc](/images/no_tumor.jpg) |
 | ---------------------- |------------------------------|-----------------------------|----------------------------|-----------------------------|
 | **Description**        |Glioma                        |Meningioma                   |Pituitary                   |No Tumor                     |
 
@@ -139,8 +139,8 @@ After comparing VGG16 and EfficientNetB7, The results are as below :
 
 | **Requirement(%)**     |   **Accuracy (%)**        |  **Validation Accuracy (%)** |
 | ---------------------- |-------------------------- |------------------------------|
-| `EfficientNetB7`       |  97.76                    | 97.17                       |
-| `VGG16 `               |  96.34                    | 78/17                        |
+| `EfficientNetB7`       |  97.76                    | 97.17                        |
+| `VGG16 `               |  96.34                    | 78.17                        |
 
 Therefore, the most efficient model is `EfficientNetB7` after a Training of 5 hours
 
