@@ -144,18 +144,17 @@ Therefore, the most efficient model is `EfficientNetB7` after a Training of 5 ho
 
 ## Web Application & Local Installation
 
-![under_cons](images/under_cons.jpg)
+#### Flask Home Page
 
-#### Home Page
+![index](images/flask.png)
 
-![index]()
+#### Streamlit Lite Home Page
+
+![index](images/lite.png)
 
 #### Classification Results via Web Interface
+![under_cons](images/under_cons.jpg)
 
-![class 1]() 
-![class 2]()
-![class 3]()
-![class 4]()
 
 ### Installation
 
@@ -165,9 +164,9 @@ Therefore, the most efficient model is `EfficientNetB7` after a Training of 5 ho
 * Donwload my Latest EfficientNetB7.h5d5 file [here](https://drive.google.com/file/d/1I0pbD4h9oGQIq_9ZFyqiOGXOOXHqEHDa/view?usp=sharing).
 * Copy these Two files to the Models Folder
 * Run `pip install requirements.txt`
-* After all requirements are met, run `python3 app.py` 
-* Run also `python3 deploy.py`
-* The Application should show on your browser as depicted in the Demo Images
+* After all requirements are met, run `python app.py` : observe `running on http://127.0.0.1:5000`
+* Alternatively, you can run `streamlit run helper.py` for the lite streamlit Application
+* The Application(s) should show on your browser as depicted in the Demo Images
 
 
 #### Library Requirements
