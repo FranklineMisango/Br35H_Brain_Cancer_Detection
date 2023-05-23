@@ -28,8 +28,8 @@ The Dataset was download from kaggle, and it is publicly available and has no us
 2. Swati Kanchan
 3. Masoud Nickparvar 
 
-Download the dataset from [Kaggle](https://www.kaggle.com/sartajbhuvaji/brain-tumor-classification-mri).
-Download the Validation Dataset from [kaggle](https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset)
+* Download the dataset from [Kaggle](https://www.kaggle.com/sartajbhuvaji/brain-tumor-classification-mri).
+* Download the Validation Dataset from [kaggle](https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset)
 
 ## Requirements
 
