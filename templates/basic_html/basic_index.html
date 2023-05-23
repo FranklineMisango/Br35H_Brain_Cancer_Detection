@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Brain Tumor Classification</title>
+  </head>
+  <body>
+    <h1>Brain Tumor Classification</h1>
+    <form method="POST" enctype="multipart/form-data">
+      <input type="file" name="file" required>
+      <br>
+      <label>Select the model:</label>
+      <select name="model_choice" required>
+        <option value="VGG16">VGG16</option>
+        <option value="EfficientNetB7">EfficientNetB7</option>
+      </select>
+      <br>
+      <input type="submit" value="Classify">
+    </form>
+  </body>
+</html>

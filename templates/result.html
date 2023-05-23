@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>BRH35</title>
+        <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"/>
+    </head>
+    
+    <header>
+            <nav>
+              <div class="nav-bg"></div>
+              <ul>
+                <li><a href="/"><img src="{{ url_for('static', filename='/images/brain_logo.png') }}" height=40px width=40px alt="neuralBlack"/> <p>BRH35 </p></a></li>
+              </ul>
+            </nav>
+    </header>
+    
+    <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+    </label>
+    
+    <body>
+      <div class="cardpred">
+          <div class="container">
+            <img src="{{ url_for('static', filename='images/' + image_file) }}" alt="Uploaded Image" height="52.5%" width="52.5%">
+            <p>Prediction: {{ result }}</p>
+            <button type="button" id="goHome"><a href="/" style="text-decoration: none; color: white;">Go home</a></button>
+          </div>
+      </div>
+  </body>
+  
+</html>
