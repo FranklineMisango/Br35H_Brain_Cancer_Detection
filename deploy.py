@@ -29,7 +29,7 @@ def index():
             f = request.files['bt_image']
             filename = str(f.filename)
 
-            if filename!='':
+            if filename != '':
                 ext = filename.split(".")
                 
                 if ext[1] in ALLOWED_EXTENSIONS:
@@ -37,7 +37,7 @@ def index():
 
                     f.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
 
-                    with open(os.path.join(app.config['UPLOAD_FOLDER'], filename),'rb') as img:
+                    with open(os.path.join(app.config['UPLOAD_FOLDER'], filename), 'rb') as img:
                         predicted = requests.post("http://localhost:5000/predict", files={"file": img}).json()
 
                     session['pred_label'] = predicted['class_name']
@@ -51,6 +51,5 @@ def index():
 
     return render_template('index.html')
 
-if __name__=="__main__":
+if __name__ == "__main__":
     app.run(port=3000)
-    
