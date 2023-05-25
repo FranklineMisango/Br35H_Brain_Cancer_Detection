@@ -2,12 +2,15 @@ import streamlit as st
 import tensorflow as tf
 from PIL import Image
 import numpy as np
+import tensorflow as tf
 
+#The model paths
 vgg16_model_path = "/home/misango/code/Br35H_Brain_Cancer_Detection/Models/brain_tumor_classification_VGG16_test1309.h5"
 efficientnet_model_path = "/home/misango/code/Br35H_Brain_Cancer_Detection/Models/brain_tumor_classification_efnB7_test10091335.hdf5"
 
-vgg16_model = tf.keras.models.load_model(vgg16_model_path, compile=False)
-efficientnet_model = tf.keras.models.load_model(efficientnet_model_path,compile=False)
+# Load your VGG16 model
+vgg16_model = tf.keras.models.load_model(vgg16_model_path, compile = False)
+efficientnet_model = tf.keras.models.load_model(efficientnet_model_path, compile = False)
 
 def preprocess_image(image):
     img = Image.open(image)
@@ -24,7 +27,7 @@ def main():
     if uploaded_image is not None:
         image = preprocess_image(uploaded_image)
 
-        model_choice = st.radio("Select the model", ("VGG16", "EfficientNetB7"))
+        model_choice = st.radio("Select the model", ("EfficientNetB7(Recommended Baseline)", "VGG16"))
 
         if st.button("Classify"):
             st.write("Classifying...")

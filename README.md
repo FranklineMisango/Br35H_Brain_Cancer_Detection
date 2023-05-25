@@ -134,13 +134,14 @@ This is the structure of the EfficientNetB7 model implemented with optimum param
 
 After comparing VGG16 and EfficientNetB7, The results are as below : 
 
-
 | **Requirement(%)**     |   **Accuracy (%)**        |  **Validation Accuracy (%)** |
 | ---------------------- |-------------------------- |------------------------------|
 | `EfficientNetB7`       |  97.76                    | 97.17                        |
 | `VGG16 `               |  96.34                    | 78.17                        |
 
 Therefore, the most efficient model is `EfficientNetB7` after a Training of 5 hours
+
+We proceed to implement Web application(s) using different frameworks to render the EfficientNetB7 as below 
 
 ## Web Application & Local Installation
 
@@ -158,6 +159,8 @@ Therefore, the most efficient model is `EfficientNetB7` after a Training of 5 ho
 
 ### Installation
 
+#### Headsup ~ Use the Streamlit App For Now as Flask is Still undergoing Testing
+
 * Clone this Repository to your local terminal
 * Create a New Folder called Models in the Repo (Don't Attempt to Git push to my original Repository)
 * Download my Latest VGG16.h5 file [here](https://drive.google.com/file/d/1UCVRtdH8yeMdnOHV3Vov6trOpkPEwbsP/view?usp=sharing).
@@ -165,9 +168,8 @@ Therefore, the most efficient model is `EfficientNetB7` after a Training of 5 ho
 * Copy these Two files to the Models Folder
 * Run `pip install requirements.txt`
 * After all requirements are met, run `python app.py` : observe `running on http://127.0.0.1:5000`
-* Alternatively, you can run `streamlit run helper.py` for the lite streamlit Application
+* Alternatively, If you PC Has Low Computational Power,  you can run `streamlit run helper.py` for the lite streamlit Application : observe `http://localhost:8501`
 * The Application(s) should show on your browser as depicted in the Demo Images
-
 
 #### Library Requirements
 
